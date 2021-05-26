@@ -36,6 +36,8 @@ public class ProtocolDecode extends ByteToMessageDecoder {
 				int i = in.readableBytes();
 				byte[] ts = new byte[i];
 				in.readBytes(ts);
+				//https://www.cnblogs.com/leesf456/p/6898069.html
+				//ByteBufUtil.hexDump(buffer);
 				// 判断包的类型
 //				ts = escape(ts);
 //				check(ts);
