@@ -32,7 +32,7 @@ GitHub：https://github.com/sinpolib/sokit
 下载地址：http://sokit.soft32.com/
 度盘：https://pan.baidu.com/s/1f_HIo8WsBmVVBJrAAvfKAw 提取码：c1ry
 
-![772384-20181219110643751-131746938](D:\socket_testing_tool\images\772384-20181219110643751-131746938.jpg)
+![772384-20181219110643751-131746938](images/772384-20181219110643751-131746938.jpg)
 
 **3、Hercules SETUP utility**
 
