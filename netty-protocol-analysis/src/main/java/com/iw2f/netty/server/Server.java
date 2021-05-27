@@ -71,7 +71,7 @@ public class Server {
 							ch.pipeline().addLast(heartbeatCmdlHandler);
 						}
 					});
-			int inetPort = 9125;
+			int inetPort = 1125;
 			f = serverBootstrap.bind(inetPort).sync();
 			channel = f.channel();
 			// f.channel().closeFuture().sync();

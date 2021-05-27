@@ -32,7 +32,7 @@ public class ProtocolDecode extends ByteToMessageDecoder {
 	private Object decode(ChannelHandlerContext ctx, ByteBuf in) {
 		try {
 			while (in.isReadable()) {
-				in.readByte();
+				//in.readByte();
 				int i = in.readableBytes();
 				byte[] ts = new byte[i];
 				in.readBytes(ts);
