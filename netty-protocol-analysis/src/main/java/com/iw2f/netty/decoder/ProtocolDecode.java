@@ -4,6 +4,7 @@ import java.util.List;
 
 
 import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBufUtil;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
@@ -36,6 +37,7 @@ public class ProtocolDecode extends ByteToMessageDecoder {
 				int i = in.readableBytes();
 				byte[] ts = new byte[i];
 				in.readBytes(ts);
+				log.info(ByteBufUtil.hexDump(ts));
 				//https://www.cnblogs.com/leesf456/p/6898069.html
 				//ByteBufUtil.hexDump(buffer);
 				// 判断包的类型

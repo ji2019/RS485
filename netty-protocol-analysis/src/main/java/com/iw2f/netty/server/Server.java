@@ -64,8 +64,8 @@ public class Server {
 					.channel(NioServerSocketChannel.class)//
 					.childHandler(new ChannelInitializer<NioSocketChannel>() {
 						protected void initChannel(NioSocketChannel ch) {
-							ch.pipeline().addLast(
-									new DelimiterBasedFrameDecoder(1024, Unpooled.copiedBuffer(new byte[] { 0x7f })));
+							//ch.pipeline().addLast(
+							//		new DelimiterBasedFrameDecoder(1024, Unpooled.copiedBuffer(new byte[] { 0x7f })));
 							ch.pipeline().addLast(new ProtocolDecode());
 							ch.pipeline().addLast(antCmdHandler);
 							ch.pipeline().addLast(heartbeatCmdlHandler);
